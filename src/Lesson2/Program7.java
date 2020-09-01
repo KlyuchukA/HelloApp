@@ -13,14 +13,37 @@ public class Program7 {
                 "Киров 8332\n");
         int num = in.nextInt();
 
-        if ((num == 495) ^ (num == 499)) {
-            System.out.println("Москва. Стоимость разговора:" + moscow_tax*10);}
-        else if (num == 843) {
-            System.out.println("Ростов. Стоимость разговора:" + rostov_tax*10);}
-        else if (num == 861) {
-            System.out.println("Краснодар. Стоимость разговора:" + krasnodar_tax*10);}
-        else if (num == 8332) {
-            System.out.println("Киров. Стоимость разговора:" + kirov_tax*10);}
- }
-    }
+//        if ((num == 495) ^ (num == 499)) {
+//            System.out.println("Москва. Стоимость разговора:" + moscow_tax*10);}
+//        else if (num == 843) {
+//            System.out.println("Ростов. Стоимость разговора:" + rostov_tax*10);}
+//        else if (num == 861) {
+//            System.out.println("Краснодар. Стоимость разговора:" + krasnodar_tax*10);}
+//        else if (num == 8332) {
+//            System.out.println("Киров. Стоимость разговора:" + kirov_tax*10);}
+//           else {
+//            System.out.println("Неверный код");}
+//        }
+// }
+
+        switch (num) {
+            case 495:
+                System.out.println("Москва. Стоимость разговора:" + moscow_tax * 10);
+                break;
+            case 499:
+                System.out.println("Москва. Стоимость разговора:" + moscow_tax * 10);
+            case 843:
+                System.out.println("Ростов. Стоимость разговора:" + rostov_tax * 10);
+                break;
+            case 861:
+                System.out.println("Краснодар. Стоимость разговора:" + krasnodar_tax * 10);
+                break;
+            case 8332:
+                System.out.println("Киров. Стоимость разговора:" + kirov_tax*10);
+                break;
+            default:
+                System.out.println("Неверный код");
+        }
+    }}
+
 

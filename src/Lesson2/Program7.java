@@ -32,6 +32,7 @@ public class Program7 {
                 break;
             case 499:
                 System.out.println("Москва. Стоимость разговора:" + moscow_tax * 10);
+                break;
             case 843:
                 System.out.println("Ростов. Стоимость разговора:" + rostov_tax * 10);
                 break;

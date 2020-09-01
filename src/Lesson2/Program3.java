@@ -21,11 +21,6 @@ public class Program3 {
 //        }
 //
 //            System.out.println(i);
-//        if (num > 0)
-//        {
-//            num=num+1;
-//        }
-//        Console.WriteLine("num={0}",num);
-//        Console.ReadKey(true);
+//
     }
 }

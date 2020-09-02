@@ -30,7 +30,7 @@ public class Program8 {
         }
 
             OptionalInt max = Arrays.stream(a).max();
-            System.out.println("Сума положительных элементов массива = "+ max.getAsInt());
+            System.out.println("Сума положительных элементов массива"+ max.getAsInt());
             System.out.println("Сума положительных элементов массива = " + sum);
             System.out.println("Количество положительных элементов массива = " + counter);
             System.out.println("Сумма четных отрицательных элементов = " + otr);

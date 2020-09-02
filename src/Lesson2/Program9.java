@@ -9,7 +9,9 @@ public class Program9 {
             int tmp = a[i];
             a[i] = a[j];
             a[j] = tmp;
+//            System.out.print(i + " " + j + " ");
         }
+        System.out.println();
 
 //        Для каждого элемента int из массива а вывести на экран значение int
         for ( int i : a )

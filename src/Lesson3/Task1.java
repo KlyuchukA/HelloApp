@@ -1,7 +1,7 @@
 package Lesson3;
 
 public class Task1 {
-    public class Phone {
+    static class Phone {
 
         public String number;
         public String model;
@@ -10,7 +10,7 @@ public class Task1 {
 
         // Void - Ничего не возвращает
         public void receiveCall(String name) {
-            System.out.println("Звонит" + name);
+            System.out.println("Звонит" + " " + name);
         }
 
         public void receiveCall(String name, String number) {
@@ -20,6 +20,11 @@ public class Task1 {
         //   String - т.к. формат переменной Number string
         public String getNumber() {
             return this.number;
+        }
+
+//        Проверка того, что все классы создадлись с нужными параметрами
+        public void print(){
+            System.out.println(this.number + " " + this.model + " " + this.weight);
         }
 
         // Конструктор вызывает значения второго конструктора
@@ -39,10 +44,20 @@ public class Task1 {
         public Phone() {
         }
     }
+
+
         public static void main (String [] args) {
-            Lesson3.Phone ph1 = new Lesson3.Phone("89178654540", "A", 444);
-            Lesson3.Phone ph2 = new Lesson3.Phone("89276354544", "B", 555);
-            Lesson3.Phone ph3 = new Lesson3.Phone("89095467444", "C", 333);
+            Phone ph1 = new Phone("89178654540", "A", 444);
+            Phone ph2 = new Phone("89276354544", "B", 555);
+            Phone ph3 = new Phone("89095467444", "C", 333);
+
+            ph1.print();
+            ph2.print();
+            ph3.print();
+
+            ph1.receiveCall("Anna", "8901233333" );
+            ph2.receiveCall("Yulia" );
+            ph3.receiveCall("Sergey", ph3.getNumber());
         }
     }
 

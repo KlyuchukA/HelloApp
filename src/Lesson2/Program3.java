@@ -16,11 +16,5 @@ public class Program3 {
         if (num < 0) {
             System.out.println (num) ;
         }
-//        for (int i = num; i >= 0; i++) {
-//            System.out.println (i+1) ;
-//        }
-//
-//            System.out.println(i);
-//
     }
 }

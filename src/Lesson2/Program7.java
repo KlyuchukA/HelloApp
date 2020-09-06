@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Program7 {
 
     public static void main(String[] args) {
-        double moscow_tax = 4.15,rostov_tax = 1.98, krasnodar_tax=2.69,kirov_tax = 5;
+        double moscow_tax = 4.15, rostov_tax = 1.98, krasnodar_tax = 2.69, kirov_tax = 5;
         Scanner in = new Scanner(System.in);
         System.out.print("Введите один из кодов города: Москва 495 или 499\n" +
                 "Ростов 863\n" +
@@ -40,11 +40,12 @@ public class Program7 {
                 System.out.println("Краснодар. Стоимость разговора:" + krasnodar_tax * 10);
                 break;
             case 8332:
-                System.out.println("Киров. Стоимость разговора:" + kirov_tax*10);
+                System.out.println("Киров. Стоимость разговора:" + kirov_tax * 10);
                 break;
             default:
                 System.out.println("Неверный код");
         }
-    }}
+    }
+}
 
 

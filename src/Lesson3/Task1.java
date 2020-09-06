@@ -22,19 +22,19 @@ public class Task1 {
             return this.number;
         }
 
-// Метод выводит каждый элемент из массива
-        public void sendMessage (String number, String ...vars) {
+        // Метод выводит каждый элемент из массива
+        public void sendMessage(String number, String... vars) {
 
             System.out.println(number);
 
-            for (String x: vars) {
+            for (String x : vars) {
                 System.out.println(x);
             }
 
         }
 
-//        Проверка того, что все классы создадлись с нужными параметрами
-        public void print(){
+        //        Проверка того, что все классы создадлись с нужными параметрами
+        public void print() {
             System.out.println(this.number + " " + this.model + " " + this.weight);
         }
 
@@ -55,20 +55,21 @@ public class Task1 {
         public Phone() {
         }
     }
-        public static void main (String [] args) {
-            Phone ph1 = new Phone("89178654540", "A", 444);
-            Phone ph2 = new Phone("89276354544", "B", 555);
-            Phone ph3 = new Phone("89095467444", "C", 333);
 
-            ph1.print();
-            ph2.print();
-            ph3.print();
+    public static void main(String[] args) {
+        Phone ph1 = new Phone("89178654540", "A", 444);
+        Phone ph2 = new Phone("89276354544", "B", 555);
+        Phone ph3 = new Phone("89095467444", "C", 333);
 
-            ph1.receiveCall("Anna", "8901233333" );
-            ph2.receiveCall("Yulia" );
-            ph3.receiveCall("Sergey", ph3.getNumber());
+        ph1.print();
+        ph2.print();
+        ph3.print();
 
-            ph1.sendMessage("4556664666", "454545");
-        }
+        ph1.receiveCall("Anna", "8901233333");
+        ph2.receiveCall("Yulia");
+        ph3.receiveCall("Sergey", ph3.getNumber());
+
+        ph1.sendMessage("4556664666", "454545");
     }
+}
 

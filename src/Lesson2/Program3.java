@@ -10,11 +10,11 @@ public class Program3 {
         System.out.print("Input a number: ");
         int num = in.nextInt();
 
-         if (num >= 0) {
-             System.out.println (num+1) ;
-         }
+        if (num >= 0) {
+            System.out.println(num + 1);
+        }
         if (num < 0) {
-            System.out.println (num) ;
+            System.out.println(num);
         }
     }
 }

@@ -1,4 +1,5 @@
 package Lesson2;
+
 import java.util.Arrays;
 import java.util.OptionalInt;
 
@@ -23,23 +24,23 @@ public class Program8 {
             } else if ((a[i] < 0) & (a[i] % 2 == 0)) {
                 otr = otr + a[i];
             }
-           if (a[i] < 0) {
+            if (a[i] < 0) {
                 sumotr = sumotr + a[i];
-                countrotr ++;
-           }
+                countrotr++;
+            }
         }
 
-            avarage = (double) sumotr / (double) countrotr;
+        avarage = (double) sumotr / (double) countrotr;
 
-            OptionalInt max = Arrays.stream(a).max();
-            System.out.println("Максимум среди положительных элементов массива"+ max.getAsInt());
-            System.out.println("Сума положительных элементов массива = " + sum);
-            System.out.println("Количество положительных элементов массива = " + counter);
-            System.out.println("Сумма четных отрицательных элементов = " + otr);
-            System.out.println("Среднее арифметическое отрицательных элементов = " + avarage);
+        OptionalInt max = Arrays.stream(a).max();
+        System.out.println("Максимум среди положительных элементов массива" + max.getAsInt());
+        System.out.println("Сума положительных элементов массива = " + sum);
+        System.out.println("Количество положительных элементов массива = " + counter);
+        System.out.println("Сумма четных отрицательных элементов = " + otr);
+        System.out.println("Среднее арифметическое отрицательных элементов = " + avarage);
         System.out.println("Сумма отрицательных элементов = " + sumotr);
-        }
     }
+}
 
 
 

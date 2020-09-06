@@ -4,11 +4,12 @@ public class Cat extends Animal {
 
     int lapy;
 
-    public void est () {
+    public void est() {
         System.out.println("Кошка есть медленно");
     }
-        public void makeNoise() {
-        System.out.println ("мяу");
+
+    public void makeNoise() {
+        System.out.println("мяу");
 
     }
 

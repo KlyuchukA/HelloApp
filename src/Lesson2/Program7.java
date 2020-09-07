@@ -12,6 +12,7 @@ public class Program7 {
                 "Краснодар 861\n" +
                 "Киров 8332\n");
         int num = in.nextInt();
+        int count = 10;
 
 //        if ((num == 495) ^ (num == 499)) {
 //            System.out.println("Москва. Стоимость разговора:" + moscow_tax*10);}
@@ -28,19 +29,19 @@ public class Program7 {
 
         switch (num) {
             case 495:
-                System.out.println("Москва. Стоимость разговора:" + moscow_tax * 10);
+                System.out.println("Москва. Стоимость разговора:" + moscow_tax * count);
                 break;
             case 499:
-                System.out.println("Москва. Стоимость разговора:" + moscow_tax * 10);
+                System.out.println("Москва. Стоимость разговора:" + moscow_tax * count);
                 break;
             case 843:
-                System.out.println("Ростов. Стоимость разговора:" + rostov_tax * 10);
+                System.out.println("Ростов. Стоимость разговора:" + rostov_tax * count);
                 break;
             case 861:
-                System.out.println("Краснодар. Стоимость разговора:" + krasnodar_tax * 10);
+                System.out.println("Краснодар. Стоимость разговора:" + krasnodar_tax * count);
                 break;
             case 8332:
-                System.out.println("Киров. Стоимость разговора:" + kirov_tax * 10);
+                System.out.println("Киров. Стоимость разговора:" + kirov_tax * count);
                 break;
             default:
                 System.out.println("Неверный код");

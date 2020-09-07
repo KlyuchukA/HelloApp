@@ -1,9 +1,10 @@
+//Ввести целое трехзначное число в консоли и найти сумму цифр этого трехзначного числа
+
 package Lesson2;
 
 import java.util.Scanner;
 
 public class Program2 {
-
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

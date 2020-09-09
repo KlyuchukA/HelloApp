@@ -3,8 +3,8 @@ package Lesson41;
 public class Lorry extends Car{
     String kuzov;
 
-    public Lorry (String marka, String klass, String ves, String motor, String kuzov) {
-        super(marka, klass, ves, motor);
+    public Lorry (String marka, String klass, String ves, String motor, String kuzov, Engine f) {
+        super(marka, klass, ves, motor, f);
         this.kuzov = kuzov;
     }
 
@@ -17,6 +17,6 @@ public class Lorry extends Car{
 
     @Override
     public void printInfo() {
-      System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " кузов " + kuzov);
+      System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " кузов " + kuzov + this.f);
     }
 }

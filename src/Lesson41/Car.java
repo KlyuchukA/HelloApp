@@ -5,18 +5,18 @@ public abstract class Car {
     String klass;
     String ves;
     String motor;
-
-    class Engine
+    Engine f;
 
     public abstract void start();
     public abstract void stop();
     public abstract void printInfo();
 
-    public Car(String marka, String klass, String ves, String motor) {
+    public Car(String marka, String klass, String ves, String motor, Engine f) {
         this.marka = marka;
         this.klass = klass;
         this.ves = ves;
         this.motor = motor;
+        this.f = f;
     }
 
     public void turnRight(){
@@ -26,6 +26,4 @@ public abstract class Car {
     public void turnLeft(){
         System.out.println("Поворот налево");
     }
-
-
 }

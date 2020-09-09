@@ -18,7 +18,7 @@ public class SportCar extends Car{
 
     @Override
     public void printInfo() {
-        System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " скорость " + speed +this.f);
+        System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " скорость " + speed + f.power + f.performance);
     }
 
 

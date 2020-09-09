@@ -17,6 +17,6 @@ public class Lorry extends Car{
 
     @Override
     public void printInfo() {
-      System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " кузов " + kuzov + this.f);
+      System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " кузов " + kuzov + f.power + f.performance);
     }
 }

@@ -11,7 +11,7 @@ public abstract class Car {
     public abstract void stop();
     public abstract void printInfo();
 
-    public Car(String marka, String klass, String weight, String motor, Engine f) {
+    public Car(String brand, String klass, String weight, String motor, Engine f) {
         this.brand = brand;
         this.klass = klass;
         this.weight = weight;

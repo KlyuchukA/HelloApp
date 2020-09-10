@@ -9,6 +9,7 @@ public class Program6 {
         System.out.print("Input a number: ");
         int num = in.nextInt();
 
+//   логика определения четности и знака числа не пересекалась.
         if ((num < 0) && (num % 2 == 0)) {
             System.out.println("отрицательное четное число");
         } else if ((num < 0) && (!(num % 2 == 0))) {

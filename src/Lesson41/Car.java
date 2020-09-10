@@ -1,9 +1,9 @@
 package Lesson41;
 
 public abstract class Car {
-    String marka;
+    String brand;
     String klass;
-    String ves;
+    String weight;
     String motor;
     Engine f;
 
@@ -11,10 +11,10 @@ public abstract class Car {
     public abstract void stop();
     public abstract void printInfo();
 
-    public Car(String marka, String klass, String ves, String motor, Engine f) {
-        this.marka = marka;
+    public Car(String marka, String klass, String weight, String motor, Engine f) {
+        this.brand = brand;
         this.klass = klass;
-        this.ves = ves;
+        this.weight = weight;
         this.motor = motor;
         this.f = f;
     }

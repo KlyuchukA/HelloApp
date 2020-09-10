@@ -3,8 +3,8 @@ package Lesson41;
 public class SportCar extends Car{
     String speed;
 
-    public SportCar (String marka, String klass, String ves, String motor, String speed, Engine f) {
-        super(marka, klass, ves, motor, f);
+    public SportCar (String brand, String klass, String weight, String motor, String speed, Engine f) {
+        super(brand, klass, weight, motor, f);
         this.speed = speed;
     }
 
@@ -17,7 +17,7 @@ public class SportCar extends Car{
 
     @Override
     public void printInfo() {
-        System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " скорость " + speed + "сила" + this.f.power + "выполняемость" + this.f.performance);
+        System.out.println("Грузовик: " + brand + " класс" + klass + " вес "+ weight + " двигатель " + motor + " скорость " + speed + "сила" + this.f.power + "выполняемость" + this.f.performance);
     }
 
 

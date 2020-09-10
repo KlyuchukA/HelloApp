@@ -1,11 +1,11 @@
 package Lesson41;
 
 public class Lorry extends Car{
-    String kuzov;
+    String body;
 
-    public Lorry (String marka, String klass, String ves, String motor, String kuzov, Engine f) {
-        super(marka, klass, ves, motor, f);
-        this.kuzov = kuzov;
+    public Lorry (String brand, String klass, String weight, String motor, String body, Engine f) {
+        super(brand, klass, weight, motor, f);
+        this.body = body;
     }
 
     public void start(){
@@ -17,6 +17,6 @@ public class Lorry extends Car{
 
     @Override
     public void printInfo() {
-      System.out.println("Грузовик: " + marka + " класс" + klass + " вес "+ ves + " двигатель " + motor + " кузов " + kuzov + "сила" + this.f.power + "выполняемость" + this.f.performance);
+      System.out.println("Грузовик: " + brand + " класс" + klass + " вес "+ weight + " двигатель " + motor + " кузов " + body + "сила" + this.f.power + "выполняемость" + this.f.performance);
     }
 }

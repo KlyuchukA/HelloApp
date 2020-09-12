@@ -7,7 +7,6 @@ public class Task1 {
         public String model;
         public int weight;
 
-
         // Void - Ничего не возвращает
         public void receiveCall(String name) {
             System.out.println("Звонит" + " " + name);
@@ -30,11 +29,11 @@ public class Task1 {
             for (String x : vars) {
                 System.out.println(x);
             }
-
         }
 
         //        Проверка того, что все классы создадлись с нужными параметрами
         public void print() {
+
             System.out.println(this.number + " " + this.model + " " + this.weight);
         }
 
@@ -44,7 +43,6 @@ public class Task1 {
 //        this.model = model;
             this(number, model);
             this.weight = weight;
-
         }
 
         public Phone(String number, String model) {

@@ -2,7 +2,7 @@ package Lesson31;
 
 public class Horse extends Animal {
 
-    String speed;
+   public String speed;
 
     public void est() {
         System.out.println("Лошадь есть сено");

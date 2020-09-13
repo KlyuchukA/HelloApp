@@ -21,11 +21,11 @@ public class Main {
         list.add(animal3);
 
 //   Через цикл Animal - вместо типа переменной, list - название массива), вызываем наши дополнительные методы
-        for (Animal y : list) {
-            veterinar.treatAnimal(y);
-            y.makeNoise();
-            y.sleep();
-            y.est();
+        for (Animal animals : list) {
+            veterinar.treatAnimal(animals);
+            animals.makeNoise();
+            animals.sleep();
+            animals.est();
         }
 
     }

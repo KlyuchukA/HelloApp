@@ -2,7 +2,7 @@ package Lesson31;
 
 public class Cat extends Animal {
 
-    int lapy;
+    public int paws;
 
     public void est() {
         System.out.println("Кошка есть медленно");
@@ -10,11 +10,10 @@ public class Cat extends Animal {
 
     public void makeNoise() {
         System.out.println("мяу");
-
     }
 
-    public Cat(String food, String location, int lapy) {
+    public Cat(String food, String location, int paws) {
         super(food, location);
-        this.lapy = lapy;
+        this.paws = paws;
     }
 }

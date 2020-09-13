@@ -1,7 +1,7 @@
 package Lesson5;
 
 public class Monitor {
-    int diagonal;
+    private int diagonal;
     String manufactory4;
 
     public Monitor(int diagonal, String manufactory4) {

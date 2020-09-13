@@ -1,12 +1,12 @@
 package Lesson5;
 
 public class Cpu {
-    String takt;
-    int quantity;
-    String cache;
-    String memory;
-    String name;
-    String manufactorer;
+   private String takt;
+   private int quantity;
+   private String cache;
+   private String memory;
+   private String name;
+   private String manufactorer;
 
     public Cpu(String takt, int quantity, String cache, String memory, String name, String manufactorer) {
         this.takt = takt;
@@ -18,7 +18,7 @@ public class Cpu {
     }
 
     public void returnCpu() {
-        System.out.println("Процессор: " + name + takt + quantity + cache + memory + manufactorer);
+        System.out.println("Процессор: " + " " + name + " " + takt + " " + quantity + " " + cache + " " + memory + " " + manufactorer);
       }
     }
 

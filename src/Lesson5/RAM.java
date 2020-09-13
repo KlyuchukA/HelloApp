@@ -1,10 +1,10 @@
 package Lesson5;
 
 public class RAM {
-    String manufactiry1;
-    String valume;
-    String frequency;
-    String type;
+    private String manufactiry1;
+    private String valume;
+    private String frequency;
+    private String type;
 
     public RAM (String manufactiry1, String valume, String frequency, String type) {
         this.manufactiry1 = manufactiry1;
@@ -15,7 +15,7 @@ public class RAM {
 
 
     public void returnRam() {
-        System.out.println("Данные монитора: " + manufactiry1 + valume +  frequency + type);
+        System.out.println("Данные оперативной памяти: " + " " + manufactiry1 + " " + valume + " " +  frequency + " " + type);
     }
 
 }

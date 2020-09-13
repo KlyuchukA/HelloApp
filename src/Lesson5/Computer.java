@@ -16,11 +16,11 @@ public void turnOn () {
 }
 
     public void working (){
-    cpu.returnObject();
-    monitor.returnObject();
-    ram.returnObject();
-    storage.returnObject();
-    videocard.returnObject();
+//    cpu.returnCpu();
+//    monitor.returnMonitor();
+//    ram.returnRam();
+//    storage.returnStorage();
+    this.videocard.returnVideocard();
     }
 }
 

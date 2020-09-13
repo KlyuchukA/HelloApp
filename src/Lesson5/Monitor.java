@@ -1,6 +1,6 @@
 package Lesson5;
 
-public class Monitor extends Common{
+public class Monitor {
     int diagonal;
     String manufactory4;
 
@@ -9,7 +9,7 @@ public class Monitor extends Common{
         this.manufactory4 = manufactory4;
     }
 
-    public void returnObject() {
+    public void returnMonitor() {
         System.out.println("Данные монитора: " + diagonal + manufactory4 );
     }
 }

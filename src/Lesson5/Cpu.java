@@ -1,6 +1,6 @@
 package Lesson5;
 
-public class Cpu extends Common {
+public class Cpu {
     String takt;
     int quantity;
     String cache;
@@ -17,7 +17,7 @@ public class Cpu extends Common {
         this.manufactorer = manufactorer;
     }
 
-    public void returnObject() {
+    public void returnCpu() {
         System.out.println("Процессор: " + name + takt + quantity + cache + memory + manufactorer);
       }
     }

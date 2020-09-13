@@ -2,9 +2,9 @@ package Lesson3;
 
 public class Phone {
 
-    public String number;
-    public String model;
-    public int weight;
+    private String number;
+    private String model;
+    private int weight;
 
     // Void - Ничего не возвращает
     public void receiveCall(String name) {

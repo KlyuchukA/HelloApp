@@ -1,6 +1,6 @@
 package Lesson5;
 
-public class RAM extends Common{
+public class RAM {
     String manufactiry1;
     String valume;
     String frequency;
@@ -14,7 +14,7 @@ public class RAM extends Common{
     }
 
 
-    public void returnObject() {
+    public void returnRam() {
         System.out.println("Данные монитора: " + manufactiry1 + valume +  frequency + type);
     }
 

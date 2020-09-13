@@ -1,8 +1,9 @@
 package Lesson31;
+
 public class Animal {
 
-    String food;
-    String location;
+    private String food;
+    private String location;
 
     public void makeNoise() {
         System.out.println("Такое-то животное орет");
@@ -21,4 +22,11 @@ public class Animal {
         this.location = location;
     }
 
+    public String getFood() {
+        return food;
+    }
+
+    public String getLocation() {
+        return location;
+    }
 }

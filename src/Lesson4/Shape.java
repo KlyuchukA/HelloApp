@@ -1,9 +1,8 @@
 package Lesson4;
 
 public interface Shape {
-    String getName();
+    public String getName();
 
     double getSquare();
-
 }
 

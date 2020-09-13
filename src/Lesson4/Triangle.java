@@ -1,11 +1,11 @@
 package Lesson4;
 
 public class Triangle implements Shape {
-    double osnovanie;
-    double height;
+    public double base;
+    public double height;
 
     public Triangle(double h, double a) {
-        this.osnovanie = h;
+        this.base = h;
         this.height = a;
     }
 
@@ -16,7 +16,7 @@ public class Triangle implements Shape {
 
     @Override
     public double getSquare() {
-        return 0.5 * osnovanie * height;
+        return 0.5 * base * height;
     }
 }
 

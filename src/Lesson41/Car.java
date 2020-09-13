@@ -1,14 +1,16 @@
 package Lesson41;
 
 public abstract class Car {
-    String brand;
-    String klass;
-    String weight;
-    String motor;
-    Engine f;
+    public String brand;
+    public String klass;
+    public String weight;
+    public String motor;
+    public Engine f;
 
     public abstract void start();
+
     public abstract void stop();
+
     public abstract void printInfo();
 
     public Car(String brand, String klass, String weight, String motor, Engine f) {
@@ -19,11 +21,11 @@ public abstract class Car {
         this.f = f;
     }
 
-    public void turnRight(){
+    public void turnRight() {
         System.out.println("Поворот направо");
     }
 
-    public void turnLeft(){
+    public void turnLeft() {
         System.out.println("Поворот налево");
     }
 }

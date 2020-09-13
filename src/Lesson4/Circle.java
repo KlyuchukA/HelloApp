@@ -1,10 +1,9 @@
 package Lesson4;
 
 public class Circle implements Shape {
-    double radius;
+    public double radius;
 
     public Circle(double r) {
-
         this.radius = r;
     }
 

@@ -31,8 +31,10 @@ public class Main {
                 break;
             default:
         }
-        if (calculate != null) {
 
+        if (calculate != null) {
+        Logger logger = calculate.calculate();
+        logger.log();
         }
 
 

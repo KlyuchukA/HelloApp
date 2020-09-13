@@ -1,13 +1,12 @@
 package Lesson52;
 
-public class Division extends Calculator{
+public class Division extends Calculator {
     public Logger calculate() {
         return new ConsoleLogger();
     }
 
-    //    public Logger int calculate (int x, int y){
-//
-//        return x + y;
-//    }
+    public double Result(double x, double y) {
+        return x / y;
+    }
 
 }

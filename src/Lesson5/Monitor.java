@@ -10,7 +10,7 @@ public class Monitor {
     }
 
     public void returnMonitor() {
-        System.out.println("Данные монитора: " + " " + diagonal + " " + manufactory4 );
+        System.out.println("Данные монитора: " + " " + diagonal + " " + manufactory4);
     }
 }
 

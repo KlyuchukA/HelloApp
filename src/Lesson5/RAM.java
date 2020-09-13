@@ -6,7 +6,7 @@ public class RAM {
     private String frequency;
     private String type;
 
-    public RAM (String manufactiry1, String valume, String frequency, String type) {
+    public RAM(String manufactiry1, String valume, String frequency, String type) {
         this.manufactiry1 = manufactiry1;
         this.valume = valume;
         this.frequency = frequency;
@@ -15,7 +15,7 @@ public class RAM {
 
 
     public void returnRam() {
-        System.out.println("Данные оперативной памяти: " + " " + manufactiry1 + " " + valume + " " +  frequency + " " + type);
+        System.out.println("Данные оперативной памяти: " + " " + manufactiry1 + " " + valume + " " + frequency + " " + type);
     }
 
 }

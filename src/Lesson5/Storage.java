@@ -11,8 +11,7 @@ public class Storage {
             this.manufactiry3 = manufactiry3;
             this.volume2 = valume2;
             this.formfactor = formfactor;
-        }
-        else {
+        } else {
             this.manufactiry3 = manufactiry3;
             this.volume2 = valume2;
             this.formfactor = formfactor;

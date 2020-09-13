@@ -19,8 +19,9 @@ public class Videocard {
             this.cold = "Active";
         }
     }
-        public void returnVideocard () {
-            System.out.println("Данные видеокарты: " + " " + this.manufactiry2 + " " + this.type + " " + this.volume + " " + this.cold);
-        }
+
+    public void returnVideocard() {
+        System.out.println("Данные видеокарты: " + " " + this.manufactiry2 + " " + this.type + " " + this.volume + " " + this.cold);
     }
+}
 

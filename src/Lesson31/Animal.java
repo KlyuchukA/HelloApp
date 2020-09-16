@@ -5,15 +5,15 @@ public class Animal {
     private String food;
     private String location;
 
-    public void makeNoise() {
+    protected void makeNoise() {
         System.out.println("Такое-то животное орет");
     }
 
-    public void est() {
+    protected void est() {
         System.out.println("Такое-то животное ест");
     }
 
-    public void sleep() {
+    protected void sleep() {
         System.out.println("Такое-то животное спит");
     }
 
@@ -22,11 +22,11 @@ public class Animal {
         this.location = location;
     }
 
-    public String getFood() {
+    protected String getFood() {
         return food;
     }
 
-    public String getLocation() {
+    protected String getLocation() {
         return location;
     }
 }

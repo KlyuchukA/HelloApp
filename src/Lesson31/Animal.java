@@ -2,8 +2,8 @@ package Lesson31;
 
 public class Animal {
 
-    private String food;
-    private String location;
+    protected String food;
+    protected String location;
 
     protected void makeNoise() {
         System.out.println("Такое-то животное орет");

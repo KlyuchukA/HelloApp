@@ -1,5 +1,5 @@
 package Lesson612;
-import java.util.ArrayList;
+
 import java.util.*;
 
 public class Lesson612 {
@@ -14,7 +14,7 @@ public class Lesson612 {
 
         test.add(99);
         test.remove(4);
-        test.remove((Integer)1);
+        test.remove((Integer) 1);
         test.get(0);
         test.clear();
 
@@ -23,4 +23,5 @@ public class Lesson612 {
             System.out.println(listIter.next());
         }
         System.out.println(test.size());
-    } }
+    }
+}

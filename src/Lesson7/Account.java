@@ -6,17 +6,14 @@ import java.util.Arrays;
 
 //public class Account implements Serializable {
 public class Account  {
-    public Integer accountId;
+    public int accountId;
     public String holder;
-    public Double amount;
+    public int amount;
 
-    public Account(int accountId, String holder, double amount) {
+    public Account(int accountId, String holder, int amount) {
         this.accountId = accountId;
         this.holder = holder;
         this.amount = amount;
-    }
-
-    public Account(String s, int parseInt, String s1, double parseDouble) {
     }
 
     public int getAccount(){
@@ -25,8 +22,12 @@ public class Account  {
     public String getHolder(){
         return holder;
     }
-    public double getAmount(){
+    public int getAmount(){
         return amount;
+    }
+
+    public void print(){
+        System.out.println(accountId + " " + holder + " " + amount);
     }
 }
 

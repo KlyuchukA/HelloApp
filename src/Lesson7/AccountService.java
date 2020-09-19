@@ -14,25 +14,6 @@ public interface AccountService {
 //    }
 
 
-    public static Account read() throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader("collection.txt"))) {
-            String str = reader.readLine();
-            String[] arr = str.split("\\|");
 
-            return new Account(arr[0], Integer.parseInt(arr[0]), arr[1], Double.parseDouble(arr[2]));
-
-
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            throw ex;
-        }
-
-        System.out.print("\nВывод элементов массива myList: ");
-        for (int i = 0; i < arr.size; i++) {
-            System.out.print(arr[i] + ", ");
-        }
-
-    }
 
 }

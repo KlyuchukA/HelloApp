@@ -25,7 +25,10 @@ public class Account  {
     public int getAmount(){
         return amount;
     }
-
+//    дать полю amount новое значение
+    public void  setAmount(int amount){
+        this.amount = amount;
+   }
     public void print(){
         System.out.println(accountId + " " + holder + " " + amount);
     }

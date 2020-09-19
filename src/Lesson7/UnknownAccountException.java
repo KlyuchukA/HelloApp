@@ -1,7 +1,7 @@
 package Lesson7;
 
 public class UnknownAccountException extends RuntimeException{
-    public UnknownAccountException(String message) {
+    public UnknownAccountException() {
         super("Неизвестный аккаунт");
     }
 }

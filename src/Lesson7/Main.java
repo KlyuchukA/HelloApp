@@ -8,8 +8,25 @@ public class Main {
     public static void main (String[] args) throws IOException {
 
         String f = "C:\\Users\\anna.klyuchuk\\Desktop\\GIT projects\\HelloApp\\collection.txt";
-        AccountServiceImplementation accountService = new AccountServiceImplementation(f);
-        accountService.printInfo();
+        try  {
+            AccountServiceImplementation accountService = new AccountServiceImplementation(f);
+            accountService.printInfo();
+            accountService.withdraw(2777,33);
+            accountService.balance(11111);
+
+        }
+        catch (UnknownAccountException | NotEnoughMoneyException ex){
+            System.out.println(ex.getMessage());
+        }
+
+
+
+
+
+
+
+
+
 
 //        Account first = new Account(1,"Saynukov", 9999);
 //        Account second = new Account(2,"Smolina", 8888);

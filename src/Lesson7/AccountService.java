@@ -8,4 +8,5 @@ public interface AccountService {
 
      void deposit(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException;
 
+     void transfer(int from, int to, int amount) throws NotEnoughMoneyException, UnknownAccountException;
 }

@@ -11,8 +11,10 @@ public class Main {
         try  {
             AccountServiceImplementation accountService = new AccountServiceImplementation(f);
             accountService.printInfo();
-            accountService.withdraw(2777,33);
-            accountService.balance(11111);
+            accountService.transfer(1,2,444);
+//            accountService.withdraw(1,33);
+//            accountService.deposit(2,0);
+//            accountService.balance(11111);
 
         }
         catch (UnknownAccountException | NotEnoughMoneyException ex){

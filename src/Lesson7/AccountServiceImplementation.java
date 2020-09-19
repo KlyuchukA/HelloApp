@@ -93,6 +93,7 @@ public class AccountServiceImplementation implements AccountService {
         }
     }
 
+
     public int comparingBalance(int accountId) {
         int desicionBalance = 0;
 
@@ -104,7 +105,34 @@ public class AccountServiceImplementation implements AccountService {
         return desicionBalance;
     }
 
+    @Override
+    public void deposit(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException {
+        int newAmount;
 
-}
+//        можно ли вынести переменную newAmount в общий????
+        if (comparing(accountId) == false || amount == 0) {
+
+            if (comparing(accountId) == false) {
+                throw new UnknownAccountException();
+            } else throw new NotEnoughMoneyException();
+        } else {
+            for (Account account : accounts) {
+                if (account.getAccount() == accountId) {
+                    newAmount = (account.getAmount() + amount);
+                    account.setAmount(newAmount);
+                    System.out.println("Остаток средств: " + account.getAmount());
+                }
+            }
+        }
+    }
+
+    @Override
+    public void transfer(int from, int to, int amount) throws NotEnoughMoneyException, UnknownAccountException {
+        withdraw(from,amount);
+        deposit (to,amount);
+        }
+    }
+
+
 
 

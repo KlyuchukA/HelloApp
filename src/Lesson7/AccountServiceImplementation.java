@@ -1,9 +1,6 @@
 package Lesson7;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class AccountServiceImplementation implements AccountService {
@@ -15,28 +12,43 @@ public class AccountServiceImplementation implements AccountService {
     public AccountServiceImplementation(String f) throws IOException {
 //    Создаем объект типа file
         File g = new File(f);
-        try {
-//   Передали в поток для чтения наш файл g
-            BufferedReader reader = new BufferedReader(new FileReader(g));
-            String str;
+        if (!g.exists()) {
+            try {
+                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter
+                        (new FileOutputStream("filename.txt"), "utf-8"));
 
-            //  Считывает по линиям, будет читать пока будут строки заполнены
+                writer.write("1, SyaSaynukov, 9999\n");
+                writer.newLine();
+                writer.write("2, SyaSaynukov, 9999");
+
+            } catch (
+                    IOException ex) {
+                ex.printStackTrace();
+                throw ex;
+            }
+        }
+         try {
+//   Передали в поток для чтения наш файл g
+                BufferedReader reader = new BufferedReader(new FileReader(g));
+                String str;
+
+                //  Считывает по линиям, будет читать пока будут строки заполнены
 //   пока следущая строка не пустая выполняется цикл
-            while ((str = reader.readLine()) != null) {
+                while ((str = reader.readLine()) != null) {
 
 
 //  Будет массив типа String и каждый эелемент будет со своим индексом
-                String[] arr = str.split(",");
+                    String[] arr = str.split(",");
 
 //    Добавление новых элементов из файла в коллекцию
-                accounts.add(new Account(Integer.parseInt(arr[0]), arr[1], Integer.parseInt(arr[2])));
+                    accounts.add(new Account(Integer.parseInt(arr[0]), arr[1], Integer.parseInt(arr[2])));
+                }
+            } catch (
+                    IOException ex) {
+                ex.printStackTrace();
+                throw ex;
             }
-        } catch (
-                IOException ex) {
-            ex.printStackTrace();
-            throw ex;
         }
-    }
 
     public void printInfo() {
         System.out.print("\nВывод элементов массива: ");
@@ -128,10 +140,13 @@ public class AccountServiceImplementation implements AccountService {
 
     @Override
     public void transfer(int from, int to, int amount) throws NotEnoughMoneyException, UnknownAccountException {
-        withdraw(from,amount);
-        deposit (to,amount);
-        }
+        withdraw(from, amount);
+        deposit(to, amount);
+
     }
+}
+
+
 
 
 

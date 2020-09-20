@@ -20,17 +20,20 @@ public class AccountServiceImplementation implements AccountService {
                 writer.write("1, SyaSaynukov, 9999\n");
                 writer.newLine();
                 writer.write("2, SyaSaynukov, 9999");
+                writer.newLine();
+                writer.close();
 
-            } catch (
-                    IOException ex) {
+            } catch (IOException ex) {
                 ex.printStackTrace();
                 throw ex;
+
             }
-        }
+                    }
          try {
 //   Передали в поток для чтения наш файл g
                 BufferedReader reader = new BufferedReader(new FileReader(g));
                 String str;
+
 
                 //  Считывает по линиям, будет читать пока будут строки заполнены
 //   пока следущая строка не пустая выполняется цикл

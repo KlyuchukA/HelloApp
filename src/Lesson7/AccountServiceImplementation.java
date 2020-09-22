@@ -5,53 +5,59 @@ import java.util.ArrayList;
 
 public class AccountServiceImplementation implements AccountService {
 
-
     ArrayList<Account> accounts = new ArrayList<>();
 
     //    String f - путь до файла
     public AccountServiceImplementation(String f) throws IOException {
 //    Создаем объект типа file
         File g = new File(f);
+
+//   Если не нашли данный файл
         if (!g.exists()) {
+//   То создаем новый и записываем в него
             try {
                 BufferedWriter writer = new BufferedWriter(new OutputStreamWriter
-                        (new FileOutputStream("filename.txt"), "utf-8"));
+                        (new FileOutputStream(f), "utf-8"));
 
-                writer.write("1, SyaSaynukov, 9999\n");
+                writer.write("1,Saynukov,9999");
                 writer.newLine();
-                writer.write("2, SyaSaynukov, 9999");
+                writer.write("2,Ivanov,8888");
+                writer.newLine();
+                writer.write("3,Petrov,7777");
+                writer.newLine();
+                writer.write("4,Sidorov,6666");
+                writer.newLine();
+                writer.write("5,Klyuchuk,5555");
                 writer.newLine();
                 writer.close();
 
             } catch (IOException ex) {
                 ex.printStackTrace();
                 throw ex;
-
-            }
-                    }
-         try {
-//   Передали в поток для чтения наш файл g
-                BufferedReader reader = new BufferedReader(new FileReader(g));
-                String str;
-
-
-                //  Считывает по линиям, будет читать пока будут строки заполнены
-//   пока следущая строка не пустая выполняется цикл
-                while ((str = reader.readLine()) != null) {
-
-
-//  Будет массив типа String и каждый эелемент будет со своим индексом
-                    String[] arr = str.split(",");
-
-//    Добавление новых элементов из файла в коллекцию
-                    accounts.add(new Account(Integer.parseInt(arr[0]), arr[1], Integer.parseInt(arr[2])));
-                }
-            } catch (
-                    IOException ex) {
-                ex.printStackTrace();
-                throw ex;
             }
         }
+        try {
+//   Передали в поток для чтения наш файл g
+            BufferedReader reader = new BufferedReader(new FileReader(g));
+            String str;
+
+            //  Считывает по линиям, будет читать пока будут строки заполнены
+//   пока следущая строка не пустая выполняется цикл
+            while ((str = reader.readLine()) != null) {
+
+//  Будет массив типа String и каждый эелемент будет со своим индексом
+
+                String[] arr = str.split(",");
+
+//    Добавление новых элементов из файла в коллекцию
+                accounts.add(new Account(Integer.parseInt(arr[0]), arr[1], Integer.parseInt(arr[2])));
+            }
+        } catch (
+                IOException ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+    }
 
     public void printInfo() {
         System.out.print("\nВывод элементов массива: ");
@@ -108,7 +114,6 @@ public class AccountServiceImplementation implements AccountService {
         }
     }
 
-
     public int comparingBalance(int accountId) {
         int desicionBalance = 0;
 
@@ -145,7 +150,6 @@ public class AccountServiceImplementation implements AccountService {
     public void transfer(int from, int to, int amount) throws NotEnoughMoneyException, UnknownAccountException {
         withdraw(from, amount);
         deposit(to, amount);
-
     }
 }
 

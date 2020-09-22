@@ -1,11 +1,6 @@
 package Lesson7;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
-
-//public class Account implements Serializable {
-public class Account  {
+public class Account {
     public int accountId;
     public String holder;
     public int amount;
@@ -16,20 +11,24 @@ public class Account  {
         this.amount = amount;
     }
 
-    public int getAccount(){
+    public int getAccount() {
         return accountId;
     }
-    public String getHolder(){
+
+    public String getHolder() {
         return holder;
     }
-    public int getAmount(){
+
+    public int getAmount() {
         return amount;
     }
-//    дать полю amount новое значение
-    public void  setAmount(int amount){
+
+    //    дать полю amount новое значение
+    public void setAmount(int amount) {
         this.amount = amount;
-   }
-    public void print(){
+    }
+
+    public void print() {
         System.out.println(accountId + " " + holder + " " + amount);
     }
 }

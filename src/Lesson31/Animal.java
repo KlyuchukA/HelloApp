@@ -2,18 +2,18 @@ package Lesson31;
 
 public class Animal {
 
-    protected String food;
-    protected String location;
+    public String food;
+    public String location;
 
-    protected void makeNoise() {
+    public void makeNoise() {
         System.out.println("Такое-то животное орет");
     }
 
-    protected void est() {
+    public void est() {
         System.out.println("Такое-то животное ест");
     }
 
-    protected void sleep() {
+    public void sleep() {
         System.out.println("Такое-то животное спит");
     }
 
@@ -22,11 +22,11 @@ public class Animal {
         this.location = location;
     }
 
-    protected String getFood() {
+    public String getFood() {
         return food;
     }
 
-    protected String getLocation() {
+    public String getLocation() {
         return location;
     }
 }

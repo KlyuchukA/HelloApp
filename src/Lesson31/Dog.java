@@ -2,7 +2,7 @@ package Lesson31;
 
 public class Dog extends Animal {
 
-    public int weight;
+    private int weight;
 
     public void est() {
         System.out.println("Собака ест быстро");

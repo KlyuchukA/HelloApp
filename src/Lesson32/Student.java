@@ -1,10 +1,10 @@
 package Lesson32;
 
 public class Student {
-    protected String firstName;
-    protected String lastName;
-    protected String group;
-    protected double averageMark;
+    public String firstName;
+    public String lastName;
+    public String group;
+    public double averageMark;
 
     public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;

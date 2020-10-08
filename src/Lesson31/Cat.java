@@ -2,7 +2,7 @@ package Lesson31;
 
 public class Cat extends Animal {
 
-    public int paws;
+    private int paws;
 
     public void est() {
         System.out.println("Кошка есть медленно");

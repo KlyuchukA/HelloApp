@@ -2,10 +2,10 @@ package Lesson41;
 
 public abstract class Car {
     public String brand;
-    public String klass;
+    public String carClass;
     public String weight;
     public String motor;
-    public Engine f;
+    public Engine engine;
 
     public abstract void start();
 
@@ -15,10 +15,10 @@ public abstract class Car {
 
     public Car(String brand, String klass, String weight, String motor, Engine f) {
         this.brand = brand;
-        this.klass = klass;
+        this.carClass = carClass;
         this.weight = weight;
         this.motor = motor;
-        this.f = f;
+        this.engine = engine;
     }
 
     public void turnRight() {

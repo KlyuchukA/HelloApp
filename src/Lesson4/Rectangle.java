@@ -1,8 +1,8 @@
 package Lesson4;
 
 public class Rectangle implements Shape {
-    public double height;
-    public double width;
+    private double height;
+    private double width;
 
     public Rectangle(double a, double b) {
         this.height = a;

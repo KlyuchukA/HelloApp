@@ -13,7 +13,7 @@ public abstract class Car {
 
     public abstract void printInfo();
 
-    public Car(String brand, String klass, String weight, String motor, Engine f) {
+    public Car(String brand, String carClass, String weight, String motor, Engine engine) {
         this.brand = brand;
         this.carClass = carClass;
         this.weight = weight;
